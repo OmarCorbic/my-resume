@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+}
+
+/* header styles */
+.cover-photo {
+  display: none;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0px 5px 10px 4px black;
+  margin-bottom: 10px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(white, #e9ecef, black);
+}
+.intro {
+  text-align: center;
+  font-family: "Slabo 27px", serif;
+  font-size: 20px;
+  color: white;
+}
+.intro-wrapper {
+  background: linear-gradient(90deg, black, rgb(19, 18, 18), black);
+
+  width: 100%;
+}
+/* nav-bar styles */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  background-color: #f8f9fa;
+  padding: 0px 5px 0px 5px;
+}
+
+.nav-link-wrapper {
+  height: 30px;
+  width: 100%;
+  margin: 10px 5px 10px 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size: 10px;
+}
+
+.nav-link-wrapper a:hover {
+  border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+.nav-link-wrapper a {
+  color: rgb(54, 54, 54);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
+}
+
+/* main content styles */
+.card {
+  padding: 5px 20px 20px;
+  margin: 0px 10px 10px 10px;
+  border-radius: 5%;
+  box-shadow: 2px 6px 10px 5px rgb(124, 124, 124);
+  background: linear-gradient(35deg, #dcdee4, white, white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
+  line-height: 25px;
+  color: rgb(90, 89, 89);
+}
+.card h1 {
+  color: #df3030;
+}
+main {
+  background-color: #ced4da;
+  padding: 100px 0px 100px 0px;
+}
+
+/*footer styles*/
+
+.contact-info-wrapper {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Raleway", sans-serif;
+
+  line-height: 25px;
+  padding: 10px;
+}
+footer {
+  display: none;
+  background: linear-gradient(90deg, black, rgb(19, 18, 18), black);
+}
+footer h1 {
+  margin: 0px;
+  text-align: center;
+  font-family: "Slabo 27px", serif;
+  font-size: 27px;
+  color: white;
+  line-height: 70px;
+}
+.contact-info-wrapper {
+  border-top: 2px inset #ced4da;
+}
+.contact-info-div {
+  text-align: center;
+  width: 200px;
+  color: white;
+}
+.contact-info-div p {
+  font-family: "Roboto";
+}
+/* media queries */
+
+@media only screen and (min-width: 768px) {
+  .cover-photo {
+    width: 648px;
+    display: block;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 150px;
+    margin: 30px 5px 0px 5px;
+  }
+
+  .intro {
+    font-size: 40px;
+  }
+
+  footer {
+    display: block;
+  }
+
+  .nav-link-wrapper {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    width: 200px;
+    height: 430px;
+  }
+
+  .nav-link-wrapper {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1326px) {
+  .card {
+    width: 200px;
+    height: 430px;
+    margin-top: 0px;
+  }
+}
+
+/* about me styles */
+
+.aboutme-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutme-photo {
+  display: none;
+  border-radius: 5%;
+  box-shadow: 0px 5px 10px 4px black;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.aboutme-info {
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutme-photo {
+    display: block;
+  }
+}
+
+/*education styles*/
+
+.education-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.education-photo {
+  display: none;
+  border-radius: 5%;
+  box-shadow: 0px 5px 10px 4px black;
+  margin-bottom: 10px;
+}
+
+.education-info {
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .education-photo {
+    display: block;
+  }
+}
+/* skills styles */
+
+.skills-info {
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+  padding: 10px;
+}
